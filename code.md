@@ -42,7 +42,13 @@ $ git checkout master
 $ git rebase upstream/master
 ```
 
-## rebase
+## Pull request
+
+使用 Github 的 Pull request 可以把 fork 出来的代码库请求合并到上游代码库，也就是所谓的贡献代码。
+
+我们本地的代码提交后，可以基于我们的最新代码创建一个 Pull request。
+
+上游仓库的代码管理者，会对 PR 的代码进行 Review 操作，如果存在冲突，Review 的时候需要先解决冲突，最后使用 【rebase and merge】，不要使用默认的【Marge and commit】，通常这会多出一条无意义 commit。
 
 ```bash
 git rebase -i HEAD~2
